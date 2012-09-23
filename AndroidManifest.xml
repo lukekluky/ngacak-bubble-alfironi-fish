@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.amikomgamedev.prototypetraining"
+    package="com.amikomgamedev.bubblefish"
     android:versionCode="1"
     android:versionName="1.0" 
     android:installLocation="preferExternal">
@@ -23,7 +23,7 @@
         <activity android:name=".state.StateLogoBubbleFish"></activity>
         <activity android:name=".state.StateHelp"></activity>
          <activity android:name=".state.State_IntroMenu"></activity>
-         <activity android:name=".state.StateHighscore"></activity>
+         <activity android:name="com.amikomgamedev.bubblefish.state.StateHighscore"></activity>
     </application>
 
 </manifest>
