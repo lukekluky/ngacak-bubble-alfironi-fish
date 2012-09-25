@@ -1,4 +1,4 @@
-package com.amikomgamedev.bubblefish.state;
+package com.amikomgamedev.BubbleFish.state;
 
 import org.anddev.andengine.engine.Engine;
 import org.anddev.andengine.engine.camera.Camera;
@@ -21,12 +21,14 @@ import org.anddev.andengine.ui.activity.BaseGameActivity;
 import android.R.string;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
+import android.view.KeyEvent;
 
-import com.amikomgamedev.bubblefish.Config;
-import com.amikomgamedev.bubblefish.Data;
-import com.amikomgamedev.bubblefish.Define;
-import com.amikomgamedev.bubblefish.ScoreDb;
+import com.amikomgamedev.BubbleFish.Config;
+import com.amikomgamedev.BubbleFish.Data;
+import com.amikomgamedev.BubbleFish.Define;
+import com.amikomgamedev.BubbleFish.ScoreDb;
 
 //import com.amikomgamedev.ScoreDb;
 //import com.amikomgamedev.ScoreSvc;
@@ -198,6 +200,18 @@ public class StateHighscore extends BaseGameActivity implements Config, Define, 
 		
 		
 		return scene;
+	}
+	
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if(keyCode == event.KEYCODE_BACK)
+		{
+			Intent intent = new Intent(
+					this,
+					StateMenumain.class);
+			startActivity(intent);
+			finish();
+		}
+		return super.onKeyDown(keyCode, event);
 	}
 
 }

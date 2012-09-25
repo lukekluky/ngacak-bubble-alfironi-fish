@@ -1,4 +1,4 @@
-package com.amikomgamedev.bubblefish.state;
+package com.amikomgamedev.BubbleFish.state;
 
 import javax.microedition.khronos.opengles.GL10;
 
@@ -28,8 +28,8 @@ import android.content.Intent;
 import android.graphics.drawable.StateListDrawable;
 
 
-import com.amikomgamedev.bubblefish.Config;
-import com.amikomgamedev.bubblefish.Data;
+import com.amikomgamedev.BubbleFish.Config;
+import com.amikomgamedev.BubbleFish.Data;
 
 public class StateLogoAGD extends BaseGameActivity implements Config, Data{
 	private Camera mCamera;

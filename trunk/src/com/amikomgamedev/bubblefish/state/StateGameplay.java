@@ -1,4 +1,4 @@
-package com.amikomgamedev.bubblefish.state;
+package com.amikomgamedev.BubbleFish.state;
 
 
 import java.util.ArrayList;
@@ -50,21 +50,21 @@ import android.widget.EditText;
 
 
 
-import com.amikomgamedev.bubblefish.Config;
-import com.amikomgamedev.bubblefish.Data;
-import com.amikomgamedev.bubblefish.Data_Support;
-import com.amikomgamedev.bubblefish.Define;
-import com.amikomgamedev.bubblefish.Game;
-import com.amikomgamedev.bubblefish.Loading;
-import com.amikomgamedev.bubblefish.ScoreDb;
-import com.amikomgamedev.bubblefish.Utils;
-import com.amikomgamedev.bubblefish.entity.EntityAwan;
-import com.amikomgamedev.bubblefish.entity.EntityEnemy;
-import com.amikomgamedev.bubblefish.entity.EntityMc;
-import com.amikomgamedev.bubblefish.entity.EntityObstacle;
-import com.amikomgamedev.bubblefish.entity.EntityOther;
-import com.amikomgamedev.bubblefish.entity.EntitySiluet;
-import com.amikomgamedev.bubblefish.state.State_IntroMenu;
+import com.amikomgamedev.BubbleFish.Config;
+import com.amikomgamedev.BubbleFish.Data;
+import com.amikomgamedev.BubbleFish.Data_Support;
+import com.amikomgamedev.BubbleFish.Define;
+import com.amikomgamedev.BubbleFish.Game;
+import com.amikomgamedev.BubbleFish.Loading;
+import com.amikomgamedev.BubbleFish.ScoreDb;
+import com.amikomgamedev.BubbleFish.Utils;
+import com.amikomgamedev.BubbleFish.entity.EntityAwan;
+import com.amikomgamedev.BubbleFish.entity.EntityEnemy;
+import com.amikomgamedev.BubbleFish.entity.EntityMc;
+import com.amikomgamedev.BubbleFish.entity.EntityObstacle;
+import com.amikomgamedev.BubbleFish.entity.EntityOther;
+import com.amikomgamedev.BubbleFish.entity.EntitySiluet;
+import com.amikomgamedev.BubbleFish.state.State_IntroMenu;
 
 
 public class StateGameplay extends BaseGameActivity implements
@@ -174,15 +174,9 @@ public class StateGameplay extends BaseGameActivity implements
 
 	public void onLoadResources(){
 		
-		//HudMainHud		= new HUD();
-		//SmcMainCamera.setHUD(HudMainHud);
+		
 		Game.loadFontMedium();
-		//TxtLoading = new ChangeableText(0, 0, Game.FntMedium, "Loading...");
-		//TxtLoading.setPosition((GAME_SCREEN_WIDTH-TxtLoading.getWidth())/2
-		//		, GAME_SCREEN_HEIGHT>>1);
-		//HudMainHud.getFirstChild().attachChild(Game.SprImgGameplayBackground);
-		//HudMainHud.getFirstChild().attachChild(TxtLoading);
-		//coba
+		
 		Game.setContext(this);
 		loadLoading();
 		mEngine.getTextureManager().loadTexture(txt_loading);
@@ -314,79 +308,7 @@ public class StateGameplay extends BaseGameActivity implements
 
 				finish();
 				
-				/*
-	
-				//GameScore = 0;
-				if(TchEvt.getAction()==TchEvt.ACTION_DOWN)
-				if(newGameOver)
-				{
-					TxtHighScore = new ChangeableText((GAME_SCREEN_WIDTH>>1)+10
-							, (GAME_SCREEN_HEIGHT>>1)-45
-							, Game.FntBig, " " + GameScore);
-					HudMainHud.getFirstChild().attachChild(TxtHighScore);
-				//burhan
 				
-						//highScore = new ChangeableText((GAME_SCREEN_WIDTH>>1)+120, 
-							//	10, 
-								//Game.FntMedium, scoreDb.getLatestScore());
-					
-					high = new ChangeableText((GAME_SCREEN_WIDTH>>1)-20,10, Game.FntMedium, "HighScore");
-					
-
-					HudMainHud.attachChild(highScore);
-					HudMainHud.attachChild(high);
-					//-------------
-					sprBgHeighScore.setVisible(true);
-					Detach();
-					if(HighScore){
-						
-						
-							//submitScore();	
-						
-						
-						}
-					
-					newGameOver = false;
-					//submitScore();
-				}
-				else
-				{
-					if(Utils.isInRect(TchEvt.getX(), TchEvt.getY(), 
-							Game.spBtnRestart.getX(), 
-							Game.spBtnRestart.getY(), 
-							Game.spBtnRestart.getWidth(),
-							Game.spBtnRestart.getHeight()))
-					{
-						Game.bgm_Gameplay.stop();
-						Game.spBtnRestart.animate(new long[] { 80, 80 }, 0, 1, false);
-						
-						Intent start = new Intent(StateGameplay.this, StateGameplay.class);
-						startActivity(start);
-	
-						finish();
-						Game.spBtnRestart.animate(new long[] { 80, 80 }, 1, 2, false);
-						
-					}
-	
-					else if(Utils.isInRect(TchEvt.getX(), TchEvt.getY(), 
-							Game.spBtnBackMenu.getX(), 
-							Game.spBtnBackMenu.getY(), 
-							Game.spBtnBackMenu.getWidth(),
-							Game.spBtnBackMenu.getHeight()))
-					{
-	
-						Game.spBtnBackMenu.animate(new long[] { 80, 80 }, 0, 1, false);
-						Intent start = new Intent(StateGameplay.this, StateMenumain.class);
-						startActivity(start);
-	
-						finish();
-	
-						Game.spBtnBackMenu.animate(new long[] { 80, 80 }, 1, 2, false);
-						
-					}
-				}
-				
-				*/
 				
 			break;
 		}
@@ -406,10 +328,7 @@ public class StateGameplay extends BaseGameActivity implements
 				else
 				{
 				
-					//initGame();
-					//HudMainHud.getFirstChild().detachChild(Game.SprImgGameplayBackground);
-					//SceMainScene.getFirstChild().detachChild(Game.AspSprMainchar);
-					//HudMainHud.getFirstChild().detachChild(TxtLoading);
+					
 					switchState(STATE_GAMEPLAY_INGAME);
 				}
 				
@@ -418,33 +337,7 @@ public class StateGameplay extends BaseGameActivity implements
 				Game.spBtnPause.setVisible(true);
 				SprImgGameplayButtonUp.setVisible(true);
 				Game.spBtnPause.setPosition((SmcMainCamera.getMaxX()-50), 0);  
-				/*if(Game.SprImgGameplayBackground.getX() < (SmcMainCamera.getMinX()-Game.SprImgGameplayBackground.getWidth()))
-				{
-					Game.SprImgGameplayBackground.setPosition(
-							(Game.SprImgGameplayBackground2.getX()+ Game.SprImgGameplayBackground.getWidth())-10, 
-							Game.SprImgGameplayBackground.getY());
-				}
-
-				// nge-loop bg2 kembali keatas bg1 ketika sudah tak terlihat kamera
-				if((SmcMainCamera.getMinX()-Game.SprImgGameplayBackground2.getWidth()) > Game.SprImgGameplayBackground2.getX())
-				{
-					Game.SprImgGameplayBackground2.setPosition(
-							(Game.SprImgGameplayBackground.getX()+ Game.SprImgGameplayBackground2.getWidth())-10,
-							Game.SprImgGameplayBackground2.getY());
-					
-				}
-				*/
 				
-				//coba atas
-				
-				/*if(entityenemy.size() == 0){
-					for(int a=0; a<entityenemy.size(); a++){
-					if(entityEnemy.getCurX()< -100){
-						entityEnemy.removeSprite();
-						
-					}}
-					}
-					*/
 				if(Game.AspSprMainchar.getX()> 130)
 				
 				{
@@ -554,9 +447,7 @@ public class StateGameplay extends BaseGameActivity implements
 						
 				}
 					
-					//SmcMainCamera.setCenter(
-						//	SmcMainCamera.getCenterX()+ (arg0 * 10), 
-						//SmcMainCamera.getCenterY());
+					
 				
 				
 				
@@ -614,9 +505,6 @@ public class StateGameplay extends BaseGameActivity implements
 				
 			break;
 			case STATE_GAMEPLAY_GAMEOVER:
-				//Game.spBtnBackMenu.setPosition(SmcMainCamera.getCenterX()+84, SmcMainCamera.getCenterY()+25);
-				//Game.spBtnRestart.setPosition(SmcMainCamera.getCenterX()+15, SmcMainCamera.getCenterY()+25);
-				//Game.spBtnResume.setPosition(SmcMainCamera.getCenterX()-50, SmcMainCamera.getCenterY()+25);
 				
 			break;
 		}
@@ -700,7 +588,7 @@ public class StateGameplay extends BaseGameActivity implements
 	
 	void newEnemy(){
 		
-		int newX = Utils.getRandomValue(350, 400);
+		int newX = Utils.getRandomValue(480, 500);
 		//int newY = Utils.getRandomValue(OBSTACLE_POS_Y_MIN_MAX[0], OBSTACLE_POS_Y_MIN_MAX[1]);
 		int newY = Utils.getRandomValue(5, 40);
 		float lastScenePosX = 0;
@@ -711,7 +599,7 @@ public class StateGameplay extends BaseGameActivity implements
 			lastScenePosX = getHigherCurXofObstacle();
 
 		if(LastObstaclePosX==0)
-			newX += 300;
+			newX += 480;
 		else
 			newX +=lastScenePosX;
 		

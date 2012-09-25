@@ -1,4 +1,4 @@
-package com.amikomgamedev.bubblefish.state;
+package com.amikomgamedev.BubbleFish.state;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,14 +24,16 @@ import org.anddev.andengine.opengl.texture.region.TextureRegion;
 import org.anddev.andengine.opengl.texture.region.TextureRegionFactory;
 import org.anddev.andengine.ui.activity.BaseGameActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.view.KeyEvent;
 
-import com.amikomgamedev.bubblefish.Config;
-import com.amikomgamedev.bubblefish.Data;
-import com.amikomgamedev.bubblefish.Data_teks;
-import com.amikomgamedev.bubblefish.Game;
-import com.amikomgamedev.bubblefish.Utils;
-import com.amikomgamedev.bubblefish.entity.EntityGelembung;
+import com.amikomgamedev.BubbleFish.Config;
+import com.amikomgamedev.BubbleFish.Data;
+import com.amikomgamedev.BubbleFish.Data_teks;
+import com.amikomgamedev.BubbleFish.Game;
+import com.amikomgamedev.BubbleFish.Utils;
+import com.amikomgamedev.BubbleFish.entity.EntityGelembung;
 
 
 
@@ -54,7 +56,7 @@ public class StateCredit extends BaseGameActivity implements IUpdateHandler,IOnS
 	private TextureRegion regBg;
 	private Sprite spBG;
 	
-	
+	public static BaseGameActivity _instance;
 	//untuk TouchEvent
 	private boolean teken=false;
 	private float firstPosText = 0;
@@ -71,12 +73,14 @@ public class StateCredit extends BaseGameActivity implements IUpdateHandler,IOnS
 	public Engine onLoadEngine() {
 		camera = new Camera(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 		final EngineOptions engineOptions = new EngineOptions(true, ScreenOrientation.LANDSCAPE,
-												new FillResolutionPolicy(), camera).setNeedsSound(true);
+												new FillResolutionPolicy(), camera).setNeedsSound(true).setNeedsMusic(true);
 		engineOptions.getTouchOptions().setRunOnUpdateThread(true);
 		return new Engine(engineOptions);
 	}
 
 	public void onLoadResources() {
+		Game.setContext(this);
+		Game.loadSoundGamePlay2();
 		// TODO Auto-generated method stub
 				textureBg = new Texture(2048, 2048, TextureOptions.BILINEAR);
 				regBg = TextureRegionFactory.createFromAsset
@@ -347,6 +351,11 @@ public class StateCredit extends BaseGameActivity implements IUpdateHandler,IOnS
 	}
 
 	public Scene onLoadScene() {
+		if(StateMenumain.isSoundEnable)
+		{
+				
+				Game.bgm_Menu.play();												
+		}
 		mEngine.registerUpdateHandler(new FPSLogger());
 		scene = new Scene(1);
 		spBG = new Sprite(0, 0, regBg);
@@ -412,6 +421,19 @@ public class StateCredit extends BaseGameActivity implements IUpdateHandler,IOnS
 	public void reset() {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if(keyCode == event.KEYCODE_BACK)
+		{
+			Intent intent = new Intent(
+					this,
+					StateMenumain.class);
+			startActivity(intent);
+			finish();
+			//Game.bgm_Gameplay.stop();
+		}
+		return super.onKeyDown(keyCode, event);
 	}
 
 }

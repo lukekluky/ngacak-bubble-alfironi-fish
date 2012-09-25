@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.amikomgamedev.bubblefish"
-    android:versionCode="101"
-    android:versionName="1.0.1" 
+    package="com.amikomgamedev.BubbleFish"
+    android:versionCode="1"
+    android:versionName="1.0" 
     android:installLocation="preferExternal">
 
     <uses-sdk android:minSdkVersion="8" />
-
-    <supports-screens 
-    android:smallScreens="true"
-    android:normalScreens="true"
-    android:largeScreens="true"    
-    />
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <application
         android:icon="@drawable/ic_launcher"
@@ -29,7 +23,7 @@
         <activity android:name=".state.StateLogoBubbleFish"></activity>
         <activity android:name=".state.StateHelp"></activity>
          <activity android:name=".state.State_IntroMenu"></activity>
-         <activity android:name="com.amikomgamedev.bubblefish.state.StateHighscore"></activity>
+          <activity android:name=".state.StateHighscore"></activity>
     </application>
 
 </manifest>

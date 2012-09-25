@@ -1,4 +1,4 @@
-package com.amikomgamedev.bubblefish.state;
+package com.amikomgamedev.BubbleFish.state;
 
 import org.anddev.andengine.engine.Engine;
 import org.anddev.andengine.engine.camera.SmoothCamera;
@@ -19,12 +19,13 @@ import org.anddev.andengine.opengl.texture.region.TiledTextureRegion;
 import org.anddev.andengine.ui.activity.BaseGameActivity;
 
 import android.content.Intent;
+import android.view.KeyEvent;
 
 
-import com.amikomgamedev.bubblefish.Config;
-import com.amikomgamedev.bubblefish.Data;
-import com.amikomgamedev.bubblefish.Define;
-import com.amikomgamedev.bubblefish.Game;
+import com.amikomgamedev.BubbleFish.Config;
+import com.amikomgamedev.BubbleFish.Data;
+import com.amikomgamedev.BubbleFish.Define;
+import com.amikomgamedev.BubbleFish.Game;
 
 public class StateMenumain extends BaseGameActivity implements Data, IUpdateHandler, Config,
 Define {
@@ -169,6 +170,7 @@ Define {
 										new Intent(StateMenumain.this,
 											StateCredit.class);
 									startActivity(credit);
+									finish();
 									spBtnCredit.animate(new long[]
 											{
 												80, 80
@@ -195,6 +197,7 @@ Define {
 												new Intent(StateMenumain.this,
 													StateHighscore.class);
 											startActivity(score);
+											finish();
 											spBtnScore.animate(new long[]
 													{
 														80, 80
@@ -294,4 +297,11 @@ Define {
 		
 	}
 
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if(keyCode == event.KEYCODE_BACK)
+		{
+			finish();
+		}
+		return super.onKeyDown(keyCode, event);
+	}
 }
