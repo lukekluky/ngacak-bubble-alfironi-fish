@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish;
+package com.amikomgamedev.bubblefish;
 
 public interface Data_teks {
 	public static final String TEXT_CREDIT = "CREDIT";

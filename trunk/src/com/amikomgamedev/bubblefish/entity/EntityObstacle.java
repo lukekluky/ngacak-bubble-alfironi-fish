@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish.entity;
+package com.amikomgamedev.bubblefish.entity;
 
 import java.security.PublicKey;
 
@@ -8,10 +8,10 @@ import org.anddev.andengine.entity.sprite.Sprite;
 
 import android.R.string;
 
-import com.amikomgamedev.BubbleFish.Data;
-import com.amikomgamedev.BubbleFish.Data_Support;
-import com.amikomgamedev.BubbleFish.Utils;
-import com.amikomgamedev.BubbleFish.state.StateGameplay;
+import com.amikomgamedev.bubblefish.Data;
+import com.amikomgamedev.bubblefish.Data_Support;
+import com.amikomgamedev.bubblefish.Utils;
+import com.amikomgamedev.bubblefish.state.StateGameplay;
 
 public class EntityObstacle implements Data_Support {
 	private int RctCurrent = -1;

@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish.state;
+package com.amikomgamedev.bubblefish.state;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,12 +28,12 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.view.KeyEvent;
 
-import com.amikomgamedev.BubbleFish.Config;
-import com.amikomgamedev.BubbleFish.Data;
-import com.amikomgamedev.BubbleFish.Data_teks;
-import com.amikomgamedev.BubbleFish.Game;
-import com.amikomgamedev.BubbleFish.Utils;
-import com.amikomgamedev.BubbleFish.entity.EntityGelembung;
+import com.amikomgamedev.bubblefish.Config;
+import com.amikomgamedev.bubblefish.Data;
+import com.amikomgamedev.bubblefish.Data_teks;
+import com.amikomgamedev.bubblefish.Game;
+import com.amikomgamedev.bubblefish.Utils;
+import com.amikomgamedev.bubblefish.entity.EntityGelembung;
 
 
 

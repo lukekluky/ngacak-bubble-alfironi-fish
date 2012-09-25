@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish;
+package com.amikomgamedev.bubblefish;
 
 public interface Data {
 	public static final String FONT_FILE_LOCATION = "fnt/ActionMan.ttf";

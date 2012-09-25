@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish.entity;
+package com.amikomgamedev.bubblefish.entity;
 
 import org.anddev.andengine.engine.camera.Camera;
 import org.anddev.andengine.engine.camera.SmoothCamera;
@@ -10,9 +10,9 @@ import org.anddev.andengine.entity.sprite.Sprite;
 
 import android.os.Looper;
 
-import com.amikomgamedev.BubbleFish.Data_Support;
-import com.amikomgamedev.BubbleFish.Game;
-import com.amikomgamedev.BubbleFish.Utils;
+import com.amikomgamedev.bubblefish.Data_Support;
+import com.amikomgamedev.bubblefish.Game;
+import com.amikomgamedev.bubblefish.Utils;
 
 
 public class EntityEnemy implements Data_Support {

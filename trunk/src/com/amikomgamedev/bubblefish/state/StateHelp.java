@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish.state;
+package com.amikomgamedev.bubblefish.state;
 
 import org.anddev.andengine.engine.Engine;
 import org.anddev.andengine.engine.camera.SmoothCamera;
@@ -21,10 +21,10 @@ import org.anddev.andengine.ui.activity.BaseGameActivity;
 import android.content.Intent;
 import android.view.KeyEvent;
 
-import com.amikomgamedev.BubbleFish.Config;
-import com.amikomgamedev.BubbleFish.Data;
-import com.amikomgamedev.BubbleFish.Define;
-import com.amikomgamedev.BubbleFish.Game;
+import com.amikomgamedev.bubblefish.Config;
+import com.amikomgamedev.bubblefish.Data;
+import com.amikomgamedev.bubblefish.Define;
+import com.amikomgamedev.bubblefish.Game;
 
 public class StateHelp extends BaseGameActivity implements Data, IUpdateHandler, Config,
 Define {
