@@ -1,8 +1,8 @@
-package com.amikomgamedev.bubblefish;
+package com.amikomgamedev.BubbleFish;
 
 import android.util.Log;
 
-import com.amikomgamedev.bubblefish.Game;
+import com.amikomgamedev.BubbleFish.Game;
 
 
 public class Loading {

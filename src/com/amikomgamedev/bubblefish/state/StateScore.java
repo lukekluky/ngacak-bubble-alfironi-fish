@@ -1,4 +1,4 @@
-package com.amikomgamedev.bubblefish.state;
+package com.amikomgamedev.BubbleFish.state;
 
 import org.anddev.andengine.engine.Engine;
 import org.anddev.andengine.engine.camera.SmoothCamera;
@@ -23,17 +23,18 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.text.InputType;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.widget.EditText;
 
 
 
-import com.amikomgamedev.bubblefish.Config;
-import com.amikomgamedev.bubblefish.Data;
-import com.amikomgamedev.bubblefish.Define;
-import com.amikomgamedev.bubblefish.Game;
-import com.amikomgamedev.bubblefish.Loading;
-import com.amikomgamedev.bubblefish.ScoreDb;
-import com.amikomgamedev.bubblefish.Utils;
+import com.amikomgamedev.BubbleFish.Config;
+import com.amikomgamedev.BubbleFish.Data;
+import com.amikomgamedev.BubbleFish.Define;
+import com.amikomgamedev.BubbleFish.Game;
+import com.amikomgamedev.BubbleFish.Loading;
+import com.amikomgamedev.BubbleFish.ScoreDb;
+import com.amikomgamedev.BubbleFish.Utils;
 
 public class StateScore extends BaseGameActivity implements Data, IUpdateHandler, Config,
 Define
@@ -206,5 +207,16 @@ Define
 		alert.show();
 	}
 	
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if(keyCode == event.KEYCODE_BACK)
+		{
+			Intent intent = new Intent(
+					this,
+					StateMenumain.class);
+			startActivity(intent);
+			finish();
+		}
+		return super.onKeyDown(keyCode, event);
+	}
 	
 }

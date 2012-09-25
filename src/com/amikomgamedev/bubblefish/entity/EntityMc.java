@@ -1,4 +1,4 @@
-package com.amikomgamedev.bubblefish.entity;
+package com.amikomgamedev.BubbleFish.entity;
 
 import javax.sql.DataSource;
 
@@ -7,12 +7,12 @@ import org.anddev.andengine.entity.sprite.AnimatedSprite;
 
 import android.R.color;
 
-import com.amikomgamedev.bubblefish.Data;
-import com.amikomgamedev.bubblefish.Data_Support;
-import com.amikomgamedev.bubblefish.Define;
-import com.amikomgamedev.bubblefish.Game;
-import com.amikomgamedev.bubblefish.Utils;
-import com.amikomgamedev.bubblefish.state.StateGameplay;
+import com.amikomgamedev.BubbleFish.Data;
+import com.amikomgamedev.BubbleFish.Data_Support;
+import com.amikomgamedev.BubbleFish.Define;
+import com.amikomgamedev.BubbleFish.Game;
+import com.amikomgamedev.BubbleFish.Utils;
+import com.amikomgamedev.BubbleFish.state.StateGameplay;
 
 public class EntityMc implements Define, Data, Data_Support{
 	// untuk menyimpan kondisi mc terkini

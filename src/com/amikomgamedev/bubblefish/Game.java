@@ -1,4 +1,4 @@
-package com.amikomgamedev.bubblefish;
+package com.amikomgamedev.BubbleFish;
 
 import java.io.IOException;
 
@@ -16,13 +16,11 @@ import org.anddev.andengine.opengl.texture.region.TiledTextureRegion;
 import org.anddev.andengine.ui.activity.BaseGameActivity;
 import org.anddev.andengine.util.Debug;
 
-import com.amikomgamedev.bubblefish.Data;
-import com.amikomgamedev.bubblefish.state.StateGameplay;
+import com.amikomgamedev.BubbleFish.Data;
+import com.amikomgamedev.BubbleFish.state.StateGameplay;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.widget.Button;
-
 
 public class Game implements Data, Data_Support, Define{
 

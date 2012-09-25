@@ -1,4 +1,4 @@
-package com.amikomgamedev.bubblefish;
+package com.amikomgamedev.BubbleFish;
 
 import java.util.Date;
 
