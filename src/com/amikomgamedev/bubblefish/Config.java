@@ -1,7 +1,7 @@
 package com.amikomgamedev.bubblefish;
 
 public interface Config {
-	public static final boolean _DEBUG 			= !false;
+	public static final boolean _DEBUG 			= false;
 	
 	public static final int SCREEN_TYPE_SMALL 	= 0;
 	public static final int SCREEN_TYPE_NORMAL 	= 1;
