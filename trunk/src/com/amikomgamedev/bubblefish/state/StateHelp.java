@@ -78,7 +78,7 @@ Define {
 	public Scene onLoadScene() {
 		if(StateMenumain.isSoundEnable)
 		{
-			Game.bgm_Menu.play();												
+//			Game.bgm_Menu.play();												
 		}
 		final Scene scene = new Scene(2);
 		mBG = new Sprite(0, 0, mBackgroundTextureRegion);
