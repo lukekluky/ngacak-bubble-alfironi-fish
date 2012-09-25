@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish.entity;
+package com.amikomgamedev.bubblefish.entity;
 
 import org.anddev.andengine.entity.primitive.Rectangle;
 import org.anddev.andengine.entity.sprite.Sprite;

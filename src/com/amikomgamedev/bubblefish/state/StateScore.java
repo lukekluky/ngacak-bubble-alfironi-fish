@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish.state;
+package com.amikomgamedev.bubblefish.state;
 
 import org.anddev.andengine.engine.Engine;
 import org.anddev.andengine.engine.camera.SmoothCamera;
@@ -28,13 +28,13 @@ import android.widget.EditText;
 
 
 
-import com.amikomgamedev.BubbleFish.Config;
-import com.amikomgamedev.BubbleFish.Data;
-import com.amikomgamedev.BubbleFish.Define;
-import com.amikomgamedev.BubbleFish.Game;
-import com.amikomgamedev.BubbleFish.Loading;
-import com.amikomgamedev.BubbleFish.ScoreDb;
-import com.amikomgamedev.BubbleFish.Utils;
+import com.amikomgamedev.bubblefish.Config;
+import com.amikomgamedev.bubblefish.Data;
+import com.amikomgamedev.bubblefish.Define;
+import com.amikomgamedev.bubblefish.Game;
+import com.amikomgamedev.bubblefish.Loading;
+import com.amikomgamedev.bubblefish.ScoreDb;
+import com.amikomgamedev.bubblefish.Utils;
 
 public class StateScore extends BaseGameActivity implements Data, IUpdateHandler, Config,
 Define

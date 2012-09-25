@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish;
+package com.amikomgamedev.bubblefish;
 
 public interface Config {
 	public static final boolean _DEBUG 			= !false;

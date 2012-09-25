@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish.state;
+package com.amikomgamedev.bubblefish.state;
 
 import org.anddev.andengine.engine.Engine;
 import org.anddev.andengine.engine.camera.Camera;
@@ -25,10 +25,10 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.view.KeyEvent;
 
-import com.amikomgamedev.BubbleFish.Config;
-import com.amikomgamedev.BubbleFish.Data;
-import com.amikomgamedev.BubbleFish.Define;
-import com.amikomgamedev.BubbleFish.ScoreDb;
+import com.amikomgamedev.bubblefish.Config;
+import com.amikomgamedev.bubblefish.Data;
+import com.amikomgamedev.bubblefish.Define;
+import com.amikomgamedev.bubblefish.ScoreDb;
 
 //import com.amikomgamedev.ScoreDb;
 //import com.amikomgamedev.ScoreSvc;

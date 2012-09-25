@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish.state;
+package com.amikomgamedev.bubblefish.state;
 
 import javax.microedition.khronos.opengles.GL10;
 
@@ -27,11 +27,11 @@ import org.anddev.andengine.util.modifier.ease.EaseLinear;
 import android.content.Intent;
 import android.view.KeyEvent;
 
-import com.amikomgamedev.BubbleFish.Data;
-import com.amikomgamedev.BubbleFish.Define;
-import com.amikomgamedev.BubbleFish.Utils;
-import com.amikomgamedev.BubbleFish.state.StateGameplay;
-import com.amikomgamedev.BubbleFish.state.StateSplashscreen;
+import com.amikomgamedev.bubblefish.Data;
+import com.amikomgamedev.bubblefish.Define;
+import com.amikomgamedev.bubblefish.Utils;
+import com.amikomgamedev.bubblefish.state.StateGameplay;
+import com.amikomgamedev.bubblefish.state.StateSplashscreen;
 
 public class StateSplashscreen extends BaseGameActivity implements Data, Define {
 	

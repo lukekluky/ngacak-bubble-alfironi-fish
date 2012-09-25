@@ -1,4 +1,4 @@
-package com.amikomgamedev.BubbleFish.state;
+package com.amikomgamedev.bubblefish.state;
 
 
 import java.util.ArrayList;
@@ -50,21 +50,21 @@ import android.widget.EditText;
 
 
 
-import com.amikomgamedev.BubbleFish.Config;
-import com.amikomgamedev.BubbleFish.Data;
-import com.amikomgamedev.BubbleFish.Data_Support;
-import com.amikomgamedev.BubbleFish.Define;
-import com.amikomgamedev.BubbleFish.Game;
-import com.amikomgamedev.BubbleFish.Loading;
-import com.amikomgamedev.BubbleFish.ScoreDb;
-import com.amikomgamedev.BubbleFish.Utils;
-import com.amikomgamedev.BubbleFish.entity.EntityAwan;
-import com.amikomgamedev.BubbleFish.entity.EntityEnemy;
-import com.amikomgamedev.BubbleFish.entity.EntityMc;
-import com.amikomgamedev.BubbleFish.entity.EntityObstacle;
-import com.amikomgamedev.BubbleFish.entity.EntityOther;
-import com.amikomgamedev.BubbleFish.entity.EntitySiluet;
-import com.amikomgamedev.BubbleFish.state.State_IntroMenu;
+import com.amikomgamedev.bubblefish.Config;
+import com.amikomgamedev.bubblefish.Data;
+import com.amikomgamedev.bubblefish.Data_Support;
+import com.amikomgamedev.bubblefish.Define;
+import com.amikomgamedev.bubblefish.Game;
+import com.amikomgamedev.bubblefish.Loading;
+import com.amikomgamedev.bubblefish.ScoreDb;
+import com.amikomgamedev.bubblefish.Utils;
+import com.amikomgamedev.bubblefish.entity.EntityAwan;
+import com.amikomgamedev.bubblefish.entity.EntityEnemy;
+import com.amikomgamedev.bubblefish.entity.EntityMc;
+import com.amikomgamedev.bubblefish.entity.EntityObstacle;
+import com.amikomgamedev.bubblefish.entity.EntityOther;
+import com.amikomgamedev.bubblefish.entity.EntitySiluet;
+import com.amikomgamedev.bubblefish.state.State_IntroMenu;
 
 
 public class StateGameplay extends BaseGameActivity implements
